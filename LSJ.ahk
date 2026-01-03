@@ -5,7 +5,7 @@ CoordMode, Mouse, Screen
 
 ; ===== KONFIGURACJA AKTUALIZACJI (GITHUB - REALZYWIEC) =====
 ; Tutaj wpisałem Twoje linki:
-global obecnaWersja := "1.2"
+global obecnaWersja := "1.3"
 global urlWersja := "https://raw.githubusercontent.com/RealZywiec/LSJ/refs/heads/main/version.txt"
 global urlSkrypt := "https://raw.githubusercontent.com/RealZywiec/LSJ/refs/heads/main/LSJ.ahk"
 global nazwaPlikuSkryptu := A_ScriptName
@@ -439,3 +439,4 @@ return
 
 GuiClose:
     ExitApp
+
