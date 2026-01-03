@@ -5,7 +5,7 @@ CoordMode, Mouse, Screen
 
 ; ===== KONFIGURACJA AKTUALIZACJI (GITHUB) =====
 ; ZMIEŃ TE LINKI NA SWOJE! (Instrukcja pod kodem)
-global obecnaWersja := "1.2"
+global obecnaWersja := "1.3"
 global urlWersja := "https://raw.githubusercontent.com/TWOJ_NICK/TWOJE_REPO/main/version.txt"
 global urlSkrypt := "https://raw.githubusercontent.com/TWOJ_NICK/TWOJE_REPO/main/script.ahk"
 global nazwaPlikuSkryptu := A_ScriptName ; Nazwa bieżącego pliku
@@ -438,4 +438,5 @@ FishingLoop:
 return
 
 GuiClose:
+
     ExitApp
