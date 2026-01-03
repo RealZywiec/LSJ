@@ -40,7 +40,7 @@ Gui, Margin, 0, 0
 
 ; Custom Title Bar
 Gui, Font, s10 Bold c5dade
-Gui, Add, Text, x15 y8 w400 BackgroundTrans vDragBar gDragWindow, ❄ LSJ Auto-Farm v%obecnaWersja%
+Gui, Add, Text, x15 y8 w400 BackgroundTrans vDragBar gDragWindow, LSJ Auto-Farm v%obecnaWersja%
 Gui, Font, s10 Bold cWhite
 Gui, Add, Button, x485 y5 w20 h20 gMinimizeWindow Background171717 cWhite, _
 Gui, Add, Button, x510 y5 w20 h20 gGuiClose Background171717 cWhite, X
@@ -48,87 +48,87 @@ Gui, Add, Button, x510 y5 w20 h20 gGuiClose Background171717 cWhite, X
 ; Vertical Menu
 Gui, Add, Progress, x15 y40 w1 h340 Background2a4d4f c5dade Vertical, 100
 Gui, Font, s9 Bold cWhite
-Gui, Add, Button, x25 y50 w100 h35 gShowHome Background171717 cWhite, Strona Główna
+Gui, Add, Button, x25 y50 w100 h35 gShowHome Background171717 cWhite, Strona Glowna
 Gui, Add, Button, x25 y95 w100 h35 gShowLeafFarm Background171717 cWhite, Leaf Farm
 Gui, Add, Button, x25 y140 w100 h35 gShowFishing Background171717 cWhite, Auto Fishing
 
 ; Content Area Background
 Gui, Add, Progress, x140 y40 w1 h340 Background2a4d4f c5dade Vertical, 100
 
-; ===== STRONA GŁÓWNA =====
+; ===== STRONA GLOWNA =====
 Gui, Font, s12 Bold c5dade
 Gui, Add, Text, x155 y55 w350 vHomeTitle Background111111, Witam z tej strony xzywieccc!
 Gui, Font, s9 Normal cWhite
 Gui, Add, Text, x155 y85 w350 vHomeText1 Background111111, Zapraszam do korzystania z mojego skryptu.
 Gui, Font, s8 Normal c99d9db
-Gui, Add, Text, x155 y115 w350 vHomeText2 Background111111, Tool dla LSJ Guild - automatyzacja farmienia liści i łowienia ryb.
+Gui, Add, Text, x155 y115 w350 vHomeText2 Background111111, Tool dla LSJ Guild - automatyzacja farmienia lisci i lowienia ryb.
 Gui, Add, Text, x155 y155 w350 vHomeText3 Background111111, Funkcje:
 Gui, Font, s8 Normal cWhite
-Gui, Add, Text, x155 y175 w350 vHomeFunc1 Background111111, • AFK Leaf Farm - automatyczne stawianie i ścinanie
-Gui, Add, Text, x155 y190 w350 vHomeFunc2 Background111111, • Auto Fishing - automatyczne łowienie (w tle)
-Gui, Add, Text, x155 y205 w350 vHomeFunc3 Background111111, • Automatyczne craftowanie nożyc
-Gui, Add, Text, x155 y220 w350 vHomeFunc4 Background111111, • Zmienny bind dla fishingu i leaf farm
+Gui, Add, Text, x155 y175 w350 vHomeFunc1 Background111111, - AFK Leaf Farm - automatyczne stawianie i scinanie
+Gui, Add, Text, x155 y190 w350 vHomeFunc2 Background111111, - Auto Fishing - automatyczne lowienie (w tle)
+Gui, Add, Text, x155 y205 w350 vHomeFunc3 Background111111, - Automatyczne craftowanie nozyc
+Gui, Add, Text, x155 y220 w350 vHomeFunc4 Background111111, - Zmienny bind dla fishingu i leaf farm
 Gui, Font, s7 Normal c5dade
-Gui, Add, Text, x155 y260 w350 vHomeFooter Background111111 Center, ❄ Wybierz opcję z menu aby rozpocząć ❄
+Gui, Add, Text, x155 y260 w350 vHomeFooter Background111111 Center, Wybierz opcje z menu aby rozpoczac
 
 ; ===== LEAF FARM =====
 Gui, Font, s8 Bold cWhite
 Gui, Add, Text, x155 y55 w350 vLeafTitle Background111111 Hidden, AFK LEAF FARM
 Gui, Add, Text, x155 y85 Background111111 vLeafBindLabel Hidden, Hotkey:
 Gui, Add, Edit, x210 y82 w40 h20 Background171717 cWhite vLeafBindInput Hidden Limit2, %leafBind%
-Gui, Add, Button, x255 y82 w60 h20 gZmienLeafBind Background171717 cWhite vLeafBindBtn Hidden, Zmień
+Gui, Add, Button, x255 y82 w60 h20 gZmienLeafBind Background171717 cWhite vLeafBindBtn Hidden, Zmien
 Gui, Font, s8 Normal cWhite
 Gui, Add, Text, x155 y110 Background111111 vLeafStatusLabel Hidden, Status:
-Gui, Add, Text, x205 y110 w150 vLeafStatus cff4757 Background111111 Hidden, WYŁĄCZONY
+Gui, Add, Text, x205 y110 w150 vLeafStatus cff4757 Background111111 Hidden, WYLACZONY
 Gui, Font, s8 Bold cWhite
-Gui, Add, Text, x155 y135 Background111111 vLeafDelayLabel Hidden, Opóźnienie (ms):
+Gui, Add, Text, x155 y135 Background111111 vLeafDelayLabel Hidden, Opoznienie (ms):
 Gui, Add, Edit, x250 y132 w50 h20 Background171717 cWhite vDelayInput Hidden, %clickDelay%
 Gui, Add, Button, x305 y132 w50 h20 gZmienDelay Background171717 cWhite vLeafDelayBtn Hidden, OK
 Gui, Add, Text, x155 y160 Background111111 vLeafCraftLabel Hidden, Craft (s):
 Gui, Add, Edit, x210 y157 w50 h20 Background171717 cWhite vCraftSecInput Hidden, 36
 Gui, Add, Button, x265 y157 w50 h20 gZmienCraftTime Background171717 cWhite vLeafCraftBtn Hidden, OK
-Gui, Add, Text, x155 y190 Background111111 vLeafCoordTitle Hidden, WSPÓŁRZĘDNE
+Gui, Add, Text, x155 y190 Background111111 vLeafCoordTitle Hidden, WSPOLRZEDNE
 Gui, Font, s7 Normal c99d9db
-Gui, Add, Text, x155 y208 w350 Background111111 vLeafCoordInfo Hidden, Kliknij przycisk → wskaż w grze (3s)
+Gui, Add, Text, x155 y208 w350 Background111111 vLeafCoordInfo Hidden, Kliknij przycisk -> wskaz w grze (3s)
 Gui, Font, s8 Normal cWhite
-Gui, Add, Button, x155 y225 w145 h22 gUstawZelazo Background171717 cWhite vLeafBtn1 Hidden, 1. Żelazo (eq)
+Gui, Add, Button, x155 y225 w145 h22 gUstawZelazo Background171717 cWhite vLeafBtn1 Hidden, 1. Zelazo (eq)
 Gui, Add, Text, x310 y228 w190 h16 vZelazoKoord c5dade Background111111 Hidden, nie ustawiono
 Gui, Add, Button, x155 y252 w145 h22 gUstawCraft1 Background171717 cWhite vLeafBtn2 Hidden, 2. Craft slot #1
 Gui, Add, Text, x310 y255 w190 h16 vCraft1Koord c5dade Background111111 Hidden, nie ustawiono
 Gui, Add, Button, x155 y279 w145 h22 gUstawCraft2 Background171717 cWhite vLeafBtn3 Hidden, 3. Craft slot #2
 Gui, Add, Text, x310 y282 w190 h16 vCraft2Koord c5dade Background111111 Hidden, nie ustawiono
-Gui, Add, Button, x155 y306 w145 h22 gUstawWynik Background171717 cWhite vLeafBtn4 Hidden, 4. Wynik (nożyce)
+Gui, Add, Button, x155 y306 w145 h22 gUstawWynik Background171717 cWhite vLeafBtn4 Hidden, 4. Wynik (nozyce)
 Gui, Add, Text, x310 y309 w190 h16 vWynikKoord c5dade Background111111 Hidden, nie ustawiono
-Gui, Add, Button, x155 y333 w145 h22 gUstawSlotNozyce Background171717 cWhite vLeafBtn5 Hidden, 5. Slot (na nożyce)
+Gui, Add, Button, x155 y333 w145 h22 gUstawSlotNozyce Background171717 cWhite vLeafBtn5 Hidden, 5. Slot (na nozyce)
 Gui, Add, Text, x310 y336 w190 h16 vSlotNKoord c5dade Background111111 Hidden, nie ustawiono
 
 ; ===== AUTO FISHING =====
 Gui, Font, s12 Bold c5dade
 Gui, Add, Text, x155 y55 BackgroundTrans vFishTitle Hidden, Auto Fishing
 Gui, Font, s8 Normal cWhite
-Gui, Add, Text, x155 y90 w350 Background111111 vFishDesc Hidden, Automatyczne łowienie ryb w Minecraft (działa w tle).
+Gui, Add, Text, x155 y90 w350 Background111111 vFishDesc Hidden, Automatyczne lowienie ryb w Minecraft (dziala w tle).
 Gui, Add, Text, x155 y125 Background111111 vFishBindLabel Hidden, Hotkey:
 Gui, Add, Edit, x210 y122 w40 h20 Background171717 cWhite vFishingBindInput Hidden Limit1, %fishingBind%
-Gui, Add, Button, x255 y122 w60 h20 gZmienFishingBind Background171717 cWhite vFishBindBtn Hidden, Zmień
+Gui, Add, Button, x255 y122 w60 h20 gZmienFishingBind Background171717 cWhite vFishBindBtn Hidden, Zmien
 Gui, Add, Text, x155 y155 Background111111 vFishStatusLabel Hidden, Status:
-Gui, Add, Text, x205 y155 w200 vFishingStatus cff4757 Background111111 Hidden, WYŁĄCZONY
+Gui, Add, Text, x205 y155 w200 vFishingStatus cff4757 Background111111 Hidden, WYLACZONY
 Gui, Font, s8 Normal c99d9db
 Gui, Add, Text, x155 y190 w350 Background111111 vFishInstrTitle Hidden, Instrukcja:
 Gui, Font, s8 Normal cWhite
-Gui, Add, Text, x155 y210 w350 Background111111 vFishInstr1 Hidden, 1. Weź wędkę do ręki
-Gui, Add, Text, x155 y225 w350 Background111111 vFishInstr2 Hidden, 2. Najedź myszką na wodę
-Gui, Add, Text, x155 y240 w350 Background111111 vFishInstr3 Hidden, 3. Naciśnij bind aby rozpocząć
-Gui, Add, Text, x155 y255 w350 Background111111 vFishInstr4 Hidden, 4. Naciśnij ponownie aby zatrzymać
+Gui, Add, Text, x155 y210 w350 Background111111 vFishInstr1 Hidden, 1. Wez wedke do reki
+Gui, Add, Text, x155 y225 w350 Background111111 vFishInstr2 Hidden, 2. Najedz myszka na wode
+Gui, Add, Text, x155 y240 w350 Background111111 vFishInstr3 Hidden, 3. Nacisnij bind aby rozpoczac
+Gui, Add, Text, x155 y255 w350 Background111111 vFishInstr4 Hidden, 4. Nacisnij ponownie aby zatrzymac
 
 ; Footer
 Gui, Add, Progress, x15 y390 w520 h1 Background2a4d4f c5dade, 100
 Gui, Font, s7 Normal c5dade
-Gui, Add, Text, x15 y400 w520 Background111111 Center, ❄ LSJ Guild 2025 | v%obecnaWersja% ❄
+Gui, Add, Text, x15 y400 w520 Background111111 Center, LSJ Guild 2025 | v%obecnaWersja%
 
 Gui, Show, w550 h425, LSJ Auto-Farm v%obecnaWersja%
 return
 
-; ===== LOGIKA AKTUALIZACJI (Z NAPRAWIONYM KODOWANIEM) =====
+; ===== LOGIKA AKTUALIZACJI =====
 SprawdzAktualizacje() {
     global obecnaWersja, urlWersja, urlSkrypt, nazwaPlikuSkryptu
     
@@ -138,28 +138,27 @@ SprawdzAktualizacje() {
     if (ErrorLevel)
         return
         
-    FileRead, nowaWersja, *P65001 %tempWersja% ; Odczyt w UTF-8
+    FileRead, nowaWersja, %tempWersja%
     FileDelete, %tempWersja%
     nowaWersja := Trim(nowaWersja, " `t`n`r")
 
     if (nowaWersja != "" && nowaWersja != obecnaWersja) {
-        MsgBox, 4, ❄ LSJ Updater, Wykryto nową wersję! `n`nTwoja: %obecnaWersja%`nNowa: %nowaWersja%`n`nCzy chcesz pobrać aktualizację?
+        MsgBox, 4, LSJ Updater, Wykryto nowa wersje! `n`nTwoja: %obecnaWersja%`nNowa: %nowaWersja%`n`nCzy chcesz pobrac aktualizacje?
         IfMsgBox, Yes
         {
             tempSkrypt := A_Temp . "\lsj_nowy.ahk"
             UrlDownloadToFile, %urlSkrypt%?nocache=%A_TickCount%, %tempSkrypt%
             
             if (ErrorLevel) {
-                MsgBox, 16, Błąd, Nie udało się pobrać pliku.
+                MsgBox, 16, Blad, Nie udalo sie pobrac pliku.
                 return
             }
             
-            FileRead, nowyKod, *P65001 %tempSkrypt% ; Odczyt pobranego kodu w UTF-8
+            FileRead, nowyKod, %tempSkrypt%
             FileDelete, %tempSkrypt%
             
-            ; Nadpisanie pliku z wymuszeniem kodowania UTF-8 z BOM (ważne dla polskich znaków)
             FileDelete, %nazwaPlikuSkryptu%
-            FileAppend, %nowyKod%, %nazwaPlikuSkryptu%, UTF-8
+            FileAppend, %nowyKod%, %nazwaPlikuSkryptu%
             
             MsgBox, 64, Sukces, Zaktualizowano do v%nowaWersja%. Skrypt zostanie zrestartowany.
             Run, %nazwaPlikuSkryptu%
@@ -204,17 +203,17 @@ ShowFishing:
         GuiControl, Show, %A_LoopField%
 return
 
-; ===== RESZTA FUNKCJI (DELAY, BINDS, KOORDY) =====
+; ===== RESZTA FUNKCJI =====
 ZmienDelay:
     Gui, Submit, NoHide
     clickDelay := DelayInput
-    ToolTip, ✓ %clickDelay%ms
+    ToolTip, OK: %clickDelay%ms
     SetTimer, UsunTooltip, 1000
 return
 ZmienCraftTime:
     Gui, Submit, NoHide
     craftInterval := CraftSecInput * 1000
-    ToolTip, ✓ %CraftSecInput%s
+    ToolTip, OK: %CraftSecInput%s
     SetTimer, UsunTooltip, 1000
 return
 ZmienLeafBind:
@@ -222,7 +221,7 @@ ZmienLeafBind:
     oldBind := leafBind, leafBind := LeafBindInput
     Hotkey, %oldBind%, Off
     Hotkey, %leafBind%, ToggleLeafFarm, On
-    ToolTip, ✓ Leaf Bind: %leafBind%
+    ToolTip, OK: %leafBind%
     SetTimer, UsunTooltip, 1000
 return
 ZmienFishingBind:
@@ -230,7 +229,7 @@ ZmienFishingBind:
     oldBind := fishingBind, fishingBind := FishingBindInput
     Hotkey, %oldBind%, Off
     Hotkey, %fishingBind%, ToggleFishing, On
-    ToolTip, ✓ Fish Bind: %fishingBind%
+    ToolTip, OK: %fishingBind%
     SetTimer, UsunTooltip, 1000
 return
 UsunTooltip:
@@ -255,7 +254,7 @@ return
 UstawWspolrzedne(typ) {
     global ustawianieWspolrzednych, ktoreUstawiam
     ustawianieWspolrzednych := true, ktoreUstawiam := typ
-    ToolTip, ❄ %typ%
+    ToolTip, Ustawiasz: %typ%
     SetTimer, CzekajNaKlikniecie, 100
     Sleep, 3000
 }
@@ -267,26 +266,26 @@ CzekajNaKlikniecie:
         MouseGetPos, mx, my
         if (ktoreUstawiam = "zelazo") {
             zelazoPozycja_X := mx, zelazoPozycja_Y := my
-            GuiControl,, ZelazoKoord, ✓ X:%mx% Y:%my%
+            GuiControl,, ZelazoKoord, OK X:%mx% Y:%my%
             GuiControl, +c57f287, ZelazoKoord
         } else if (ktoreUstawiam = "craft1") {
             craftSlot1_X := mx, craftSlot1_Y := my
-            GuiControl,, Craft1Koord, ✓ X:%mx% Y:%my%
+            GuiControl,, Craft1Koord, OK X:%mx% Y:%my%
             GuiControl, +c57f287, Craft1Koord
         } else if (ktoreUstawiam = "craft2") {
             craftSlot2_X := mx, craftSlot2_Y := my
-            GuiControl,, Craft2Koord, ✓ X:%mx% Y:%my%
+            GuiControl,, Craft2Koord, OK X:%mx% Y:%my%
             GuiControl, +c57f287, Craft2Koord
         } else if (ktoreUstawiam = "wynik") {
             wynikNozyce_X := mx, wynikNozyce_Y := my
-            GuiControl,, WynikKoord, ✓ X:%mx% Y:%my%
+            GuiControl,, WynikKoord, OK X:%mx% Y:%my%
             GuiControl, +c57f287, WynikKoord
         } else if (ktoreUstawiam = "slotnozyce") {
             slotNozyce_X := mx, slotNozyce_Y := my
-            GuiControl,, SlotNKoord, ✓ X:%mx% Y:%my%
+            GuiControl,, SlotNKoord, OK X:%mx% Y:%my%
             GuiControl, +c57f287, SlotNKoord
         }
-        ToolTip, ✓ OK
+        ToolTip, OK
         SetTimer, UsunTooltip, 1000
         ustawianieWspolrzednych := false
         SetTimer, CzekajNaKlikniecie, Off
@@ -298,18 +297,18 @@ return
 F6::
 ToggleLeafFarm:
     if (zelazoPozycja_X = 0 || craftSlot1_X = 0 || craftSlot2_X = 0 || wynikNozyce_X = 0 || slotNozyce_X = 0) {
-        MsgBox, 48, LSJ, Ustaw wszystkie współrzędne!
+        MsgBox, 48, LSJ, Ustaw wszystkie wspolrzedne!
         return
     }
     aktywny := !aktywny
     if (aktywny) {
-        GuiControl,, LeafStatus, WŁĄCZONY
+        GuiControl,, LeafStatus, WLACZONY
         GuiControl, +c57f287, LeafStatus
         lastCraftTime := A_TickCount
         SetTimer, FarmLoop, 10
         SetTimer, SprawdzCraft, 1000
     } else {
-        GuiControl,, LeafStatus, WYŁĄCZONY
+        GuiControl,, LeafStatus, WYLACZONY
         GuiControl, +cff4757, LeafStatus
         SetTimer, FarmLoop, Off
         SetTimer, SprawdzCraft, Off
@@ -363,11 +362,11 @@ CraftujNozyce() {
 ToggleFishing:
     fishingActive := !fishingActive
     if (fishingActive) {
-        GuiControl,, FishingStatus, WŁĄCZONY
+        GuiControl,, FishingStatus, WLACZONY
         GuiControl, +c57f287, FishingStatus
         SetTimer, FishingLoop, 10
     } else {
-        GuiControl,, FishingStatus, WYŁĄCZONY
+        GuiControl,, FishingStatus, WYLACZONY
         GuiControl, +cff4757, FishingStatus
         SetTimer, FishingLoop, Off
     }
