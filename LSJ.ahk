@@ -4,7 +4,7 @@ SetWorkingDir %A_ScriptDir%
 CoordMode, Mouse, Screen
 
 ; ===== KONFIGURACJA AKTUALIZACJI (GITHUB) =====
-global obecnaWersja := "1.1"
+global obecnaWersja := "1.2"
 global urlWersja := "https://raw.githubusercontent.com/RealZywiec/LSJ/refs/heads/main/version.txt"
 global urlSkrypt := "https://raw.githubusercontent.com/RealZywiec/LSJ/refs/heads/main/LSJ.ahk"
 global nazwaPlikuSkryptu := A_ScriptName
@@ -382,4 +382,5 @@ return
 
 GuiClose:
     ExitApp
+
 
